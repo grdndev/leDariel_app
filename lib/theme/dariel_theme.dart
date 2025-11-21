@@ -75,7 +75,7 @@ class DARIELTheme {
           secondary: accentRed,
         ),
         scaffoldBackgroundColor: secondaryColor,
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           color: cardBackground,
           elevation: 4,
           shape: RoundedRectangleBorder(

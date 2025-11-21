@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:le_dariel/theme/dariel_theme.dart';
 
-class SearchBar extends StatelessWidget {
+class DARIELSearchBar extends StatelessWidget {
   final Function(String) onSearchChanged;
   final String? hintText;
 
-  const SearchBar({
+  const DARIELSearchBar({
     super.key,
     required this.onSearchChanged,
     this.hintText,

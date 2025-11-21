@@ -4,7 +4,7 @@ import 'package:le_dariel/models/acronym.dart';
 import 'package:le_dariel/services/acronym_manager.dart';
 import 'package:le_dariel/services/acronym_access_service.dart';
 import 'package:le_dariel/views/components/acronym_card.dart';
-import 'package:le_dariel/views/components/search_bar.dart';
+import 'package:le_dariel/views/components/search_bar.dart' as dariel;
 import 'package:le_dariel/theme/dariel_theme.dart';
 import 'package:le_dariel/views/main/acronym_detail_view.dart';
 
@@ -81,7 +81,7 @@ class _AcronymListViewState extends State<AcronymListView> {
         children: [
           Padding(
             padding: const EdgeInsets.all(DARIELTheme.spacingMedium),
-            child: SearchBar(
+            child: dariel.DARIELSearchBar(
               onSearchChanged: (query) {
                 setState(() {
                   _searchQuery = query;
