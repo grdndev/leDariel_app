@@ -62,6 +62,22 @@ Le_DARIEL/
 └── Le_DARIELApp.swift         # Point d'entrée de l'application
 ```
 
+## 📦 Téléchargements
+
+Les fichiers de build iOS sont disponibles dans le dossier [`releases/`](releases/) :
+
+- **`Le_DARIEL-iOS-build.zip`** : Archive ZIP contenant les fichiers de build iOS
+  - `Le_DARIEL.app` : Application iOS pour simulateur
+  - `Le_DARIEL.xcarchive` : Archive Xcode pour distribution
+  - `README.md` : Instructions détaillées d'installation
+
+⚠️ **Important** : Ce projet est une application **iOS/SwiftUI**, pas Android.  
+**Un fichier APK ne peut pas être créé** car :
+- **APK** = Android Package Kit (format Android uniquement)
+- **Ce projet** = Application iOS/SwiftUI (format iOS uniquement)
+
+Pour plus d'informations, consultez [`releases/README.md`](releases/README.md).
+
 ## 🚀 Installation
 
 ### Prérequis
@@ -91,6 +107,10 @@ Le_DARIEL/
 4. **Construire et exécuter**
    - Sélectionner un simulateur ou un appareil
    - Appuyer sur `Cmd + R` ou cliquer sur le bouton Play
+
+### Installation depuis les fichiers de build
+
+Consultez [`releases/README.md`](releases/README.md) pour les instructions détaillées d'installation à partir des fichiers de build.
 
 ## 📱 Utilisation
 
