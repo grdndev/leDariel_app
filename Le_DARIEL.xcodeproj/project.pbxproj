@@ -14,6 +14,25 @@
 		0E5B36F52E30FDBB0023C707 /* Le_DARIELTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B36F42E30FDBB0023C707 /* Le_DARIELTests.swift */; };
 		0E5B36FF2E30FDBB0023C707 /* Le_DARIELUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B36FE2E30FDBB0023C707 /* Le_DARIELUITests.swift */; };
 		0E5B37012E30FDBB0023C707 /* Le_DARIELUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5B37002E30FDBB0023C707 /* Le_DARIELUITestsLaunchTests.swift */; };
+		EB701F5F34B447EB99DF888B /* AcronymManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5CF0E7E68D40A898033CEC /* AcronymManager.swift */; };
+		DCB686DC5C5748A0BE010236 /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888CA9AA78D44ACD8824B8D2 /* Acronym.swift */; };
+		6C7DA59917E84F489D072C1D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B08B841D914637A6A61769 /* User.swift */; };
+		0E1AC9ACDDEB47A0BE331B1F /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F6AB3A60DC4C558E18F341 /* Subscription.swift */; };
+		3CFB493433C74DFEAA121956 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D04EE38DB84DD99BD2EB11 /* AuthService.swift */; };
+		1E4BE982908F40FB9FCFC754 /* AcronymAccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE1A676E0949C58F5A1DB2 /* AcronymAccessService.swift */; };
+		1155282F01E24B27B416E738 /* DARIELTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517575D7A3214ACCB3E4697D /* DARIELTheme.swift */; };
+		B5BFA63425E240918D303D73 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E06048DB674F7597459DA5 /* LoginView.swift */; };
+		AF3EE360A1AF428697CC3C21 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887B1293DF348E7A7851FF7 /* SignUpView.swift */; };
+		0B066312D5814E97922536EF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451B8EF7E12448778CEAA447 /* MainTabView.swift */; };
+		355521F7672D476D8CB26CE2 /* AcronymListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3283A88A074754B19BC030 /* AcronymListView.swift */; };
+		CB74E4DAD48C4173AEE1C42F /* AcronymDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB348918192C4B2DA95EDBDD /* AcronymDetailView.swift */; };
+		C6431106AE4D4A72B4BC5C6A /* AlphabeticalIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07925F668B5249D581809A9D /* AlphabeticalIndexView.swift */; };
+		1B9334DFE137492A8F7418CB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB25E286704E7EAA34C95F /* ProfileView.swift */; };
+		7DCF071B112249478FEF10CE /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5597819FF46448EB4AF63 /* AdminView.swift */; };
+		92F36678F956459382E58F54 /* AcronymCardDARIEL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42114E62FB7A4D3993C277DD /* AcronymCardDARIEL.swift */; };
+		C9CF32F5FF9041628C665706 /* CategoryBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2235CA2C04A97AF40449B /* CategoryBadge.swift */; };
+		49C3394EA0CF4D20B7624DAD /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C99E6781A64873942ED131 /* SearchBar.swift */; };
+		8F68B496FB2D41D2BC62D21D /* SearchBarWithSuggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A1EA00F2144FDB41993CC /* SearchBarWithSuggestions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +63,25 @@
 		0E5B36FA2E30FDBB0023C707 /* Le_DARIELUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Le_DARIELUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5B36FE2E30FDBB0023C707 /* Le_DARIELUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIELUITests.swift; sourceTree = "<group>"; };
 		0E5B37002E30FDBB0023C707 /* Le_DARIELUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIELUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E5CF0E7E68D40A898033CEC /* AcronymManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/AcronymManager.swift; sourceTree = "<group>"; };
+		888CA9AA78D44ACD8824B8D2 /* Acronym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Models/Acronym.swift; sourceTree = "<group>"; };
+		D0B08B841D914637A6A61769 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Models/User.swift; sourceTree = "<group>"; };
+		82F6AB3A60DC4C558E18F341 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Models/Subscription.swift; sourceTree = "<group>"; };
+		E0D04EE38DB84DD99BD2EB11 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Services/AuthService.swift; sourceTree = "<group>"; };
+		9ABE1A676E0949C58F5A1DB2 /* AcronymAccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Services/AcronymAccessService.swift; sourceTree = "<group>"; };
+		517575D7A3214ACCB3E4697D /* DARIELTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Theme/DARIELTheme.swift; sourceTree = "<group>"; };
+		E7E06048DB674F7597459DA5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Auth/LoginView.swift; sourceTree = "<group>"; };
+		F887B1293DF348E7A7851FF7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Auth/SignUpView.swift; sourceTree = "<group>"; };
+		451B8EF7E12448778CEAA447 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Main/MainTabView.swift; sourceTree = "<group>"; };
+		6F3283A88A074754B19BC030 /* AcronymListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Main/AcronymListView.swift; sourceTree = "<group>"; };
+		AB348918192C4B2DA95EDBDD /* AcronymDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Main/AcronymDetailView.swift; sourceTree = "<group>"; };
+		07925F668B5249D581809A9D /* AlphabeticalIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Main/AlphabeticalIndexView.swift; sourceTree = "<group>"; };
+		CDFB25E286704E7EAA34C95F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Main/ProfileView.swift; sourceTree = "<group>"; };
+		FDB5597819FF46448EB4AF63 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Admin/AdminView.swift; sourceTree = "<group>"; };
+		42114E62FB7A4D3993C277DD /* AcronymCardDARIEL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Components/AcronymCardDARIEL.swift; sourceTree = "<group>"; };
+		5DA2235CA2C04A97AF40449B /* CategoryBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Components/CategoryBadge.swift; sourceTree = "<group>"; };
+		29C99E6781A64873942ED131 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Components/SearchBar.swift; sourceTree = "<group>"; };
+		3E7A1EA00F2144FDB41993CC /* SearchBarWithSuggestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Le_DARIEL/Views/Components/SearchBarWithSuggestions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,7 +297,26 @@
 			files = (
 				0E5B36E62E30FDB30023C707 /* ContentView.swift in Sources */,
 				0E5B36E42E30FDB30023C707 /* Le_DARIELApp.swift in Sources */,
-			);
+							EB701F5F34B447EB99DF888B /* AcronymManager.swift in Sources */,
+				DCB686DC5C5748A0BE010236 /* Acronym.swift in Sources */,
+				6C7DA59917E84F489D072C1D /* User.swift in Sources */,
+				0E1AC9ACDDEB47A0BE331B1F /* Subscription.swift in Sources */,
+				3CFB493433C74DFEAA121956 /* AuthService.swift in Sources */,
+				1E4BE982908F40FB9FCFC754 /* AcronymAccessService.swift in Sources */,
+				1155282F01E24B27B416E738 /* DARIELTheme.swift in Sources */,
+				B5BFA63425E240918D303D73 /* LoginView.swift in Sources */,
+				AF3EE360A1AF428697CC3C21 /* SignUpView.swift in Sources */,
+				0B066312D5814E97922536EF /* MainTabView.swift in Sources */,
+				355521F7672D476D8CB26CE2 /* AcronymListView.swift in Sources */,
+				CB74E4DAD48C4173AEE1C42F /* AcronymDetailView.swift in Sources */,
+				C6431106AE4D4A72B4BC5C6A /* AlphabeticalIndexView.swift in Sources */,
+				1B9334DFE137492A8F7418CB /* ProfileView.swift in Sources */,
+				7DCF071B112249478FEF10CE /* AdminView.swift in Sources */,
+				92F36678F956459382E58F54 /* AcronymCardDARIEL.swift in Sources */,
+				C9CF32F5FF9041628C665706 /* CategoryBadge.swift in Sources */,
+				49C3394EA0CF4D20B7624DAD /* SearchBar.swift in Sources */,
+				8F68B496FB2D41D2BC62D21D /* SearchBarWithSuggestions.swift in Sources */,
+);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0E5B36EC2E30FDBB0023C707 /* Sources */ = {
