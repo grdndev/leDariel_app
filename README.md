@@ -1,14 +1,8 @@
-# Le_DARIEL 📖
+# Le_DARIEL - Version Flutter 📱
 
 **Le DARIEL** : Dictionnaire des Acronymes pour une Richesse de l'Interprétation et de l'Exégèse du Livre
 
-Application iOS native développée avec SwiftUI pour consulter et explorer un dictionnaire d'acronymes bibliques.
-
-## 📱 À propos
-
-Le_DARIEL est une application mobile iOS qui permet aux utilisateurs d'explorer et de rechercher des acronymes bibliques avec leurs définitions complètes, exemples et catégories. L'application propose une interface moderne et intuitive pour naviguer dans ce dictionnaire spécialisé.
-
-🔗 **Site web du DARIEL** : [https://darieleditions.notion.site/Les-acronymes-du-Dariel-9b1db9b794ee4fb3b2e22613ad4c5789](https://darieleditions.notion.site/Les-acronymes-du-Dariel-9b1db9b794ee4fb3b2e22613ad4c5789)
+Application mobile cross-platform développée avec Flutter pour iOS et Android.
 
 ## ✨ Fonctionnalités
 
@@ -17,100 +11,135 @@ Le_DARIEL est une application mobile iOS qui permet aux utilisateurs d'explorer 
 - 📑 **Index alphabétique** : Navigation rapide par ordre alphabétique
 - 🏷️ **Catégories** : Filtrer par catégories grammaticales (nom, verbe, adjectif, etc.)
 - 👤 **Authentification utilisateur** : Système de connexion et d'inscription
-- 💳 **Gestion des abonnements** : Support pour différents types d'utilisateurs
+- 💳 **Gestion des abonnements** : Support pour différents types d'utilisateurs (Gratuit/Premium/Admin)
 - ⚙️ **Interface administrateur** : Gestion des acronymes pour les administrateurs
-- 🎨 **Interface moderne** : Design élégant avec thème personnalisé
-
-## 🛠️ Technologies
-
-- **SwiftUI** : Framework d'interface utilisateur
-- **Swift** : Langage de programmation
-- **iOS 16.2+** : Version minimale supportée
-- **Xcode** : Environnement de développement
-
-## 📁 Structure du projet
-
-```
-Le_DARIEL/
-├── Models/
-│   ├── Acronym.swift          # Modèle de données pour les acronymes
-│   ├── User.swift             # Modèle utilisateur
-│   └── Subscription.swift     # Modèle d'abonnement
-├── Views/
-│   ├── Main/
-│   │   ├── MainTabView.swift          # Vue principale avec onglets
-│   │   ├── AcronymListView.swift      # Liste des acronymes
-│   │   ├── AcronymDetailView.swift    # Détail d'un acronyme
-│   │   ├── AlphabeticalIndexView.swift # Index alphabétique
-│   │   └── ProfileView.swift          # Profil utilisateur
-│   ├── Auth/
-│   │   ├── LoginView.swift    # Connexion
-│   │   └── SignUpView.swift   # Inscription
-│   ├── Admin/
-│   │   └── AdminView.swift    # Interface administrateur
-│   └── Components/
-│       ├── AcronymCardDARIEL.swift    # Carte d'acronyme
-│       ├── CategoryBadge.swift        # Badge de catégorie
-│       ├── SearchBar.swift            # Barre de recherche
-│       └── SearchBarWithSuggestions.swift # Recherche avec suggestions
-├── Services/
-│   ├── AuthService.swift              # Service d'authentification
-│   └── AcronymAccessService.swift     # Service d'accès aux acronymes
-├── Theme/
-│   └── DARIELTheme.swift      # Thème de l'application
-├── AcronymManager.swift       # Gestionnaire d'acronymes
-└── Le_DARIELApp.swift         # Point d'entrée de l'application
-```
-
-## 📦 Téléchargements
-
-Les fichiers de build iOS sont disponibles dans le dossier [`releases/`](releases/) :
-
-- **`Le_DARIEL-iOS-build.zip`** : Archive ZIP contenant les fichiers de build iOS
-  - `Le_DARIEL.app` : Application iOS pour simulateur
-  - `Le_DARIEL.xcarchive` : Archive Xcode pour distribution
-  - `README.md` : Instructions détaillées d'installation
-
-⚠️ **Important** : Ce projet est une application **iOS/SwiftUI**, pas Android.  
-**Un fichier APK ne peut pas être créé** car :
-- **APK** = Android Package Kit (format Android uniquement)
-- **Ce projet** = Application iOS/SwiftUI (format iOS uniquement)
-
-Pour plus d'informations, consultez [`releases/README.md`](releases/README.md).
+- 🎨 **Interface moderne** : Design élégant avec thème personnalisé DARIEL
 
 ## 🚀 Installation
 
 ### Prérequis
 
-- macOS avec Xcode 14.0 ou supérieur
-- iOS 16.2 ou supérieur pour l'exécution sur appareil
-- Compte développeur Apple (pour tester sur appareil)
+- **Flutter SDK** : Version 3.0.0 ou supérieure
+  - Installation : https://flutter.dev/docs/get-started/install
+- **Dart SDK** : Inclus avec Flutter
+- **Android Studio** : Pour développer sur Android (optionnel mais recommandé)
+- **Xcode** : Pour développer sur iOS (macOS uniquement)
+- **Un appareil ou simulateur** : Android ou iOS
 
 ### Étapes d'installation
 
-1. **Cloner le dépôt**
+1. **Cloner ou télécharger le projet**
    ```bash
-   git clone https://github.com/grdndev/leDariel_app.git
-   cd leDariel_app
+   cd leDariel_flutter
    ```
 
-2. **Ouvrir le projet**
+2. **Installer les dépendances**
    ```bash
-   open Le_DARIEL.xcodeproj
+   flutter pub get
    ```
 
-3. **Configurer le projet**
-   - Sélectionner votre équipe de développement dans les paramètres du projet
-   - Choisir un bundle identifier unique
-   - Configurer les certificats de signature si nécessaire
+3. **Vérifier la configuration**
+   ```bash
+   flutter doctor
+   ```
 
-4. **Construire et exécuter**
-   - Sélectionner un simulateur ou un appareil
-   - Appuyer sur `Cmd + R` ou cliquer sur le bouton Play
+4. **Lancer l'application**
 
-### Installation depuis les fichiers de build
+   Sur Android :
+   ```bash
+   flutter run
+   ```
 
-Consultez [`releases/README.md`](releases/README.md) pour les instructions détaillées d'installation à partir des fichiers de build.
+   Sur iOS :
+   ```bash
+   flutter run -d ios
+   ```
+
+## 📦 Générer un APK (Android)
+
+Pour générer un fichier APK que vous pouvez installer sur Android :
+
+1. **APK de debug** (pour tester) :
+   ```bash
+   flutter build apk --debug
+   ```
+   Le fichier APK sera dans : `build/app/outputs/flutter-apk/app-debug.apk`
+
+2. **APK de release** (pour distribution) :
+   ```bash
+   flutter build apk --release
+   ```
+   Le fichier APK sera dans : `build/app/outputs/flutter-apk/app-release.apk`
+
+3. **APK split par architecture** (pour réduire la taille) :
+   ```bash
+   flutter build apk --split-per-abi
+   ```
+   Cela génère plusieurs APK (arm64-v8a, armeabi-v7a, x86_64)
+
+## 🍎 Générer un build iOS
+
+Pour générer un fichier IPA pour iOS :
+
+1. **Ouvrir le projet iOS dans Xcode** :
+   ```bash
+   open ios/Runner.xcworkspace
+   ```
+
+2. **Configurer les certificats** :
+   - Sélectionner votre équipe de développement
+   - Configurer les certificats de signature
+
+3. **Build IPA** :
+   ```bash
+   flutter build ipa
+   ```
+   Le fichier IPA sera dans : `build/ios/ipa/`
+
+   Ou via Xcode :
+   - Menu Product → Archive
+   - Organizer → Distribute App
+
+## 🛠️ Technologies utilisées
+
+- **Flutter** : Framework cross-platform
+- **Dart** : Langage de programmation
+- **Provider** : State management
+- **SharedPreferences** : Stockage local
+- **Crypto** : Hachage des mots de passe
+
+## 📁 Structure du projet
+
+```
+lib/
+├── main.dart                      # Point d'entrée
+├── models/                        # Modèles de données
+│   ├── acronym.dart
+│   ├── user.dart
+│   └── subscription.dart
+├── services/                      # Services métier
+│   ├── auth_service.dart
+│   ├── acronym_manager.dart
+│   └── acronym_access_service.dart
+├── theme/                         # Thème de l'application
+│   └── dariel_theme.dart
+└── views/                         # Vues de l'application
+    ├── auth/                      # Authentification
+    │   ├── login_view.dart
+    │   └── signup_view.dart
+    ├── main/                      # Vues principales
+    │   ├── main_tab_view.dart
+    │   ├── acronym_list_view.dart
+    │   ├── acronym_detail_view.dart
+    │   ├── alphabetical_index_view.dart
+    │   └── profile_view.dart
+    ├── admin/                     # Interface admin
+    │   └── admin_view.dart
+    └── components/                # Composants réutilisables
+        ├── acronym_card.dart
+        ├── category_badge.dart
+        └── search_bar.dart
+```
 
 ## 📱 Utilisation
 
@@ -120,11 +149,22 @@ Consultez [`releases/README.md`](releases/README.md) pour les instructions déta
 4. **Naviguer** : Utilisez l'index alphabétique pour une navigation rapide
 5. **Filtrer** : Filtrez par catégories grammaticales pour affiner vos résultats
 
-## 🎯 Fonctionnalités à venir
+## 🔧 Configuration
 
-- 📲 **Notifications quotidiennes** : Recevoir un acronyme aléatoire par jour
-- 💾 **Synchronisation cloud** : Sauvegarder vos favoris et préférences
-- 🌐 **Mode hors ligne** : Accès aux acronymes sans connexion internet
+### Android
+
+Modifier `android/app/build.gradle` pour configurer :
+- Le nom de l'application
+- Le package name
+- La version
+- Les permissions
+
+### iOS
+
+Modifier `ios/Runner/Info.plist` pour configurer :
+- Le nom de l'application
+- Le bundle identifier
+- Les permissions
 
 ## 👨‍💻 Développement
 
@@ -139,10 +179,6 @@ Tous droits réservés.
 ## 🤝 Contribution
 
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
-
-## 📞 Contact
-
-Pour toute question ou suggestion, veuillez ouvrir une issue sur le dépôt GitHub.
 
 ---
 
